@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>For You 💖</title>
+
+<style>
+body{
+margin:0;
+padding:0;
+font-family: Arial, Helvetica, sans-serif;
+text-align:center;
+background: linear-gradient(-45deg,#ffd6ec,#ffcce6,#ffe6f5,#ffb3d9);
+background-size:400% 400%;
+animation:bg 12s ease infinite;
+overflow-x:hidden;
+}
+@keyframes bg{
+0%{background-position:0% 50%;}
+50%{background-position:100% 50%;}
+100%{background-position:0% 50%;}
+}
+
+.container{max-width:900px;margin:auto;padding:40px;}
+h1,h2{color:#d1006e;}
+p{font-size:22px;color:#5c0033;line-height:1.8;white-space:pre-line;}
+
+button{
+padding:15px 30px;
+font-size:18px;
+border:none;
+border-radius:30px;
+margin:10px;
+cursor:pointer;
+transition:0.3s;
+}
+
+.yes{background:#ff4da6;color:white;}
+.no{background:#333;color:white;position:absolute;}
+button:hover{transform:scale(1.1);}
+
+.page{display:none;}
+.active{display:block;}
+
+.gif{width:220px;margin-top:20px;border-radius:20px;}
+
+.heart{
+position:fixed;
+top:-10px;
+color:red;
+animation:fall 5s linear infinite;
+}
+@keyframes fall{
+to{transform:translateY(100vh);}
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+
+<!-- PAGE 1 -->
+<div id="page1" class="page active">
+<h1>i made this for u bash t3rfi how loved u are 💖
+w b tabi3t l7al shkon aktar wahd taybgheek ya toraa 😉</h1>
+<img class="gif" src="https://media.tenor.com/6vWzQxYxY8EAAAAC/cute-cat-love.gif">
+<br>
+<button class="yes" onclick="nextPage(2)">Ziaaaad 💕</button>
+<button class="no" id="no1">Shi wahed akhor 😏</button>
+</div>
+
+<!-- PAGE 2 -->
+<div id="page2" class="page">
+<h1>do u know what comes in my mind when i see ur eyes? 👀</h1>
+<img class="gif" src="https://media.tenor.com/X3MIBBH6ZgMAAAAC/cute-love.gif">
+<br>
+<button class="yes" onclick="nextPage(3)">what 😌</button>
+</div>
+
+<!-- PAGE 3 -->
+<div id="page3" class="page">
+<p>
+لِعَينَيِكِ ما يَلقى الفُؤَادُ وَما لَقي  
+وَلِلحُبِّ ما لَم يَبقَ مِنْي وَما بَقي  
+وَمِا كُنتُ مِمَّن يَدخُلُ العِشِقُ قَلبَهُ  
+وَلَكِن مَن يُبصِر جُفونَكِ يَعشَقٍ
+</p>
+<img class="gif" src="https://media.tenor.com/evHsm1z8tW0AAAAC/anime-love.gif">
+<br>
+<button class="yes" onclick="nextPage(4)">Continue 💕</button>
+</div>
+
+<!-- PAGE 4 -->
+<div id="page4" class="page">
+<h1>ur eyes is my weakness 😩
+so mzl bzzaf tbghi tshofi?</h1>
+<img class="gif" src="https://media.tenor.com/9bX3X3YF0X8AAAAC/love-you.gif">
+<br>
+<button class="yes" onclick="nextPage(5)">Yesss 😌</button>
+<button class="no" id="no2">No 🙈</button>
+</div>
+
+<!-- PAGE 5 -->
+<div id="page5" class="page">
+<p>
+لِعَيْنَيْكِ سَامَحْتُ هَذَا الزَّمَانَ  
+وَكُنْتُ عَلَيْهِ طَوِيلَ العَتَبْ  
+جمالٌ يُبطّئ مرّ الرياح  
+ويرجعُ بالنهْرِ قبلَ المصبْ  
+غَرِيبٌ عَلَى الدَّهْرِ حسنك هذا  
+فُديت ولا حُسْنَ إلا أغْتَرَبْ  
+وَمَا عَادَةٌ للبَخِيلِ العَطَاءُ  
+وَلَا عَادَةٌ للكَرِيمِ الطَّلَبْ  
+وَلَا الحُرُّ عَادَتُه أَنْ يَهَابَ  
+وَلا النَّذْلُ عَادَتُهُ أَنْ يَهَبْ  
+وَقَدْ يَحْدُتُ الحُبُّ مِنْ غَيْرِ قَصْدٍ  
+كَمَا اتَّزَنَتْ للنَّبيِّ الخُطَبْ  
+وَخَيْرُ الهَوَى مَا يَكُونُ اتَّفَاقاً  
+بِلا نِيَّةٍ سَبَقَتْ أَوْ سَبَبْ  
+وَشَتَّانَ مَاءُ الغُيُومِ الفُجَاءُ  
+وَمَاءٌ يُجَاءُ بِهِ فِي القِرَبْ  
+لِعَيْنَيْكِ فِي الخَلْق مُلْكَ إِذَا ما  
+رَآهُ الرَّشيدُ اْعتَرَتْهُ الْرِّيَبْ  
+وَشَعْرُكِ لَيْلُ أمْرِئ القَيْسِ لَكِنْ  
+بِغَيْرِ الهُمُومِ أَرْتَخَى وَانْسَكَبْ  
+وَيَا زَهرتِي خُلِقْتُ خَجُولاً  
+سِوَى فِي أْتُنَتَين الهَوَى والغَضبْ  
+وَلَمْ أَكْتُبِ الشَّعْرَ فِيكِ وَلِكِنْ  
+أَحِبَّكِ مِنْ نَفْسِهِ فَانْكَتَبْ
+</p>
+<img class="gif" src="https://media.tenor.com/bCfpwMjfAi0AAAAC/cat-kiss.gif">
+<br>
+<button class="yes" onclick="nextPage(6)">What next? 💖</button>
+<button class="no">Stop 😢</button>
+</div>
+
+<!-- PAGE 6 -->
+<div id="page6" class="page">
+<h1>do u know how obsessed am i w u? 😏</h1>
+<img class="gif" src="https://media.tenor.com/LyDZ9Q8eR0AAAAAC/anime-kiss.gif">
+<br>
+<button class="yes" onclick="nextPage(7)">Show me 😌</button>
+<button class="no">Ima block u 😒</button>
+</div>
+
+<!-- PAGE 7 -->
+<div id="page7" class="page">
+<p>
+إن كنتِ شمسًا ، فأنا الفجرُ ألقاكِ، أشرقُ بكِ حتى ينهارَ ليل الغياب  
+وإن كنتُ شمسًا، فأنتِ سمائي، لا يكتملُ ضيائي إلا في عينيكِ
+</p>
+<img class="gif" src="https://media.tenor.com/kd8b3QW7f7sAAAAC/cute-love.gif">
+<br>
+<button class="yes" onclick="nextPage(8)">Continue 💕</button>
+</div>
+
+<!-- PAGE 8 -->
+<div id="page8" class="page">
+<p>
+يا عابراً في الروحِ ليتكَ تهتدي سُبُلَ المجيءِ إلى الفؤادِ لتسكنا  
+حسبي بأن ألقاكَ لستَ مُعاتباً ما زال في الأحلامِ مُتّسعٌ لنا  
+ما زلتُ أتبِعُ ظلِّ طَيفكَ في المدى وأمدَّ شوقي كي يعودَ لي الهنا  
+جُدْ بالحنان فإن كلّي واهنٌ أرضيتَ أن أفنى بحبِّك واهنا؟
+</p>
+<img class="gif" src="https://media.tenor.com/5V0bJb2KZ8cAAAAC/romantic.gif">
+<br>
+<button class="yes" onclick="nextPage(9)">Continue 💖</button>
+</div>
+
+<!-- PAGE 9 -->
+<div id="page9" class="page">
+<p>
+قَمَرٌ تَفَرَّدَ بالمَحاسِن كلها  
+فإليه يُنسَبُ كل حُسْن يُوصَفُ  
+للهِ ذاك الوجهُ كيفَ تَأْلِفَتْ  
+فيه بدائعُ لم تكنْ تتألفُ
+</p>
+<img class="gif" src="https://media.tenor.com/qC7nS8H0kz0AAAAC/cute-heart.gif">
+<br>
+<button class="yes" onclick="nextPage(10)">Continue 💕</button>
+</div>
+
+<!-- PAGE 10 -->
+<div id="page10" class="page">
+<h1>shkon heyaa ahsan bent f denya? 😌</h1>
+<img class="gif" src="https://media.tenor.com/GWqT0QkHf6gAAAAC/love.gif">
+<br>
+<button class="yes" onclick="nextPage(11)">Anaaa anaaaa 😍</button>
+</div>
+
+<!-- PAGE 11 -->
+<div id="page11" class="page">
+<h1>anaa shhaaal kanbgheeeekk w nmot elik 💖</h1>
+<img class="gif" src="https://media.tenor.com/fdO9xkS7kQ0AAAAC/soft-love.gif">
+<br>
+<button class="yes" onclick="nextPage(12)">Bzzzzaaaffff 😭💕</button>
+<button class="no" id="no3">Shwia 🤨</button>
+</div>
+
+<!-- PAGE 12 -->
+<div id="page12" class="page">
+<h1>braavooo elik wsslti hta lehna 😌
+wash tbghi nzidek ktarrr 3jbk hadshi?</h1>
+<img class="gif" src="https://media.tenor.com/6vWzQxYxY8EAAAAC/cute-cat-love.gif">
+<br>
+<button class="yes" onclick="nextPage(13)">Ah pleasse 😭</button>
+<button class="no">Sf baraka 😢</button>
+</div>
+
+<!-- PAGE 13 -->
+<div id="page13" class="page">
+<h1>tstahli akbaar kisss fl3alam 💋🌹</h1>
+<img class="gif" src="https://media.tenor.com/bCfpwMjfAi0AAAAC/cat-kiss.gif">
+<br>
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/35/Red_rose.jpg/320px-Red_rose.jpg" width="250">
+<br>
+<button class="yes" onclick="nextPage(14)">Continue 💖</button>
+</div>
+
+<!-- PAGE 14 -->
+<div id="page14" class="page">
+<p>
+i know its too late but i just want you to know that im so prouf of u ela aya haja drtiha mn lbdya tal db w kifash hta sbrti ela bzf hwayej dazo elik w bqiti waqfa ela rjlik w wajhti dakshi bohdek hadi mashi aya wahd yqd ela hadshi hadshi knt baghi ngolo lek mn imta wlkin db msha l7al earfk bagha gha thnay meni w mabaghash tzidi t3rfi elia shi haja mzl wlkin kanhess bli khassk t3rfi hadshi w t3rfi bli nti heya ahssan bent yqd aya wahd yt3rf eliha i was so lucky to have you i didn’t want u to be someone else’s wife hitash mnen shftek wt3rft elik shft meak mostaqbali kaml w mabghitsh nzid nt3rf ela shi whdaa akhra mn ghirek i loved and still love u lwahd daraja manqdsh ndoz wnkml fhala eamrek maknti hadshi kangolo ghir bash t3rfi rassk shhal rare w shhal perfect w tstahli mahssen مني hadshi kent drto qbel maytra hadshi binatna w gelt nsiftolek maybqash ghi eandi hit aslan saybto ela wedek so blama thtaji t3tini shi commentaire wla shi haja
+</p>
+<h2>by byy i love u 💔</h2>
+</div>
+
+</div>
+
+<script>
+function nextPage(n){
+let pages=document.getElementsByClassName("page");
+for(let i=0;i<pages.length;i++){pages[i].classList.remove("active");}
+document.getElementById("page"+n).classList.add("active");
+}
+function move(btn){
+btn.style.top=Math.random()*80+"vh";
+btn.style.left=Math.random()*80+"vw";
+}
+document.getElementById("no1").addEventListener("mouseover",function(){move(this);});
+document.getElementById("no2").addEventListener("mouseover",function(){move(this);});
+document.getElementById("no3").addEventListener("mouseover",function(){move(this);});
+
+setInterval(()=>{
+let heart=document.createElement("div");
+heart.className="heart";
+heart.style.left=Math.random()*100+"vw";
+heart.innerHTML="💖";
+document.body.appendChild(heart);
+setTimeout(()=>heart.remove(),5000);
+},500);
+</script>
+
+</body>
+</html>
